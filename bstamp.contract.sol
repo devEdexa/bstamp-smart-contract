@@ -26,7 +26,7 @@ contract BSTAMP is Pausable, Ownable {
     event LogNewStamp(string stampUri, string id, string appName);
     string[] private stampIndex;
 
-    function isStamp(string memory id) public returns (bool) {
+    function isStamp(string memory id) public view returns (bool) {
         if(stampIndex.length == 0) return false;
         return (keccak256(abi.encodePacked(stampIndex[bstamp[id].index])) == keccak256(abi.encodePacked(id)));
     }
