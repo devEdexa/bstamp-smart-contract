@@ -65,13 +65,18 @@ This contract inherits from the following OpenZeppelin contracts:
 
 ## Testing & Deployment
 
-Testing
+#### Install Hardhat and Dependencies
+
+
+    npm install
+
+#### Test
 
     npx hardhat test
 
 
 
-To deploy the contract to a network (e.g., local test network or Ethereum testnet), use the following command:
+#### Deploy
 
     npx hardhat run scripts/deploy.js --network <network-name>
 
